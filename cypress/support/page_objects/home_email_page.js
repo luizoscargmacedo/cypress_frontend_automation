@@ -7,7 +7,7 @@ const field_EMAIL = "//*[@id='user']";
 const field_PASSWORD = "//*[@id='pass']";
 const button_ENTER = "//*[@id='button-submit']";
 const emailAddress = "steve.rogers56444@bol.com.br";
-const password = "Everest#77";
+const password = "xxxxxxx";
 const mailboxScreen = "Caixa de Entrada";
 const emailMessage = "Samurai";
 
