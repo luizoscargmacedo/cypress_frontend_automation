@@ -23,7 +23,7 @@ Automation structure
 - Test Videos will be save on "cypress/videos" 
 - cucumber-html-report will be in "report" directory
 - RETRIES method on index.js, to run again the step that failed 2 times.
-- The secon test screenshot will be in "mochawesome-report/snapshots/healthproject.feature/print"
+- The second test screenshot will be in "mochawesome-report/snapshots/healthproject.feature/print"
 - .gitignore rule to not upload the videos, screenshots and "node_modules"in repository 
 - Logs and methods are configured to appear on console during the execution.
 
@@ -46,7 +46,7 @@ or
 ```sh
 npx cypress run
 ```
-ou pelo script 
+or pelo script 
 ```sh
 npm run cy:run
 ```
@@ -85,3 +85,4 @@ _____________________________________________
 **Created:** 2021-05-16
 
 E-mail: luiz.gmacedo@gmail.com
+Luiz Oscar Guabiraba de Macedo
