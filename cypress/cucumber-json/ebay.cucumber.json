@@ -1,0 +1,127 @@
+[
+  {
+    "description": "As a user I want to find products on Ebay page",
+    "keyword": "Feature",
+    "name": "Ebay",
+    "line": 2,
+    "id": "ebay",
+    "tags": [
+      {
+        "name": "@ebay",
+        "line": 1
+      }
+    ],
+    "uri": "ebay.feature",
+    "elements": [
+      {
+        "id": "ebay;validate-the-ebay-search",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the Ebay search",
+        "tags": [
+          {
+            "name": "@ebay",
+            "line": 1
+          },
+          {
+            "name": "@ebay_search",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "already on ebay page",
+            "result": {
+              "status": "passed",
+              "duration": 6419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "product search is executed",
+            "result": {
+              "status": "passed",
+              "duration": 8870000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "a result page appears",
+            "result": {
+              "status": "passed",
+              "duration": 8954000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "ebay;validate-user-register",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Validate User Register",
+        "tags": [
+          {
+            "name": "@ebay",
+            "line": 1
+          },
+          {
+            "name": "@ebay_user_register",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "already on Ebay page",
+            "result": {
+              "status": "passed",
+              "duration": 2769000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "click on Register button",
+            "result": {
+              "status": "passed",
+              "duration": 570000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "confirm that Create an Account screen appears",
+            "result": {
+              "status": "passed",
+              "duration": 6467000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the details and specific page appears correctly",
+            "result": {
+              "status": "failed",
+              "duration": 4805000000,
+              "error_message": "CypressError: Timed out retrying: Expected to find content: 'firstname' but never did.\n    at Object.cypressErr (https://www.ebay.com/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://www.ebay.com/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://www.ebay.com/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://www.ebay.com/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://www.ebay.com/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://www.ebay.com/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://www.ebay.com/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://www.ebay.com/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://www.ebay.com/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://www.ebay.com/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://www.ebay.com/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.ebay.com/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://www.ebay.com/__cypress/runner/cypress_runner.js:114812:14)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
