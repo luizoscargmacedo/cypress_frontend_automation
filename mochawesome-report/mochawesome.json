@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-05-10T17:15:37.671Z",
+    "end": "2021-05-10T17:16:48.418Z",
+    "duration": 70747,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eb211cad-3cec-4a2f-b11c-4c2be8f396bd",
+      "title": "",
+      "fullFile": "cypress/integration/ebay.feature",
+      "file": "cypress/integration/ebay.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "061d2a1c-26db-4f1a-8b77-c58ee6492205",
+          "title": "Ebay",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate the Ebay search",
+              "fullTitle": "Ebay Validate the Ebay search",
+              "timedOut": null,
+              "duration": 24254,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2b022e75-958f-4b44-8d27-1e7b69ca37df",
+              "parentUUID": "061d2a1c-26db-4f1a-8b77-c58ee6492205",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate User Register",
+              "fullTitle": "Ebay Validate User Register",
+              "timedOut": null,
+              "duration": 13148,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"snapshots/ebay.feature/Ebay -- Validate User Register (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find content: 'firstname' but never did.",
+                "estack": "CypressError: Timed out retrying: Expected to find content: 'firstname' but never did.\n    at Object.cypressErr (https://www.ebay.com/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://www.ebay.com/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://www.ebay.com/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://www.ebay.com/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://www.ebay.com/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://www.ebay.com/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://www.ebay.com/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://www.ebay.com/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://www.ebay.com/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://www.ebay.com/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://www.ebay.com/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.ebay.com/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://www.ebay.com/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "468754da-a737-4ebb-b0a5-941690561ac6",
+              "parentUUID": "061d2a1c-26db-4f1a-8b77-c58ee6492205",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b022e75-958f-4b44-8d27-1e7b69ca37df"
+          ],
+          "failures": [
+            "468754da-a737-4ebb-b0a5-941690561ac6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37402,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "pretty": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
