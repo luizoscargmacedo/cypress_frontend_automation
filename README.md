@@ -61,11 +61,11 @@ npx cypress run --browser chrome
 
 **To run a spec without BDD:**
 ```sh 
-./node_modules/.bin/cypress run --spec "cypress/integration/olx.spec.js"
+./node_modules/.bin/cypress run --spec "cypress/integration/ebay.spec.js"
 ```
 or
 ```sh
-npx cypress run --spec "cypress/integration/olx.spec.js"
+npx cypress run --spec "cypress/integration/ebay.spec.js"
 ```
 
 **To run by TAG follow the example below.**
