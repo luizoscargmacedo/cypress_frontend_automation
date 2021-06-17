@@ -70,12 +70,12 @@ npx cypress run --spec "cypress/integration/olx.spec.js"
 
 **To run by TAG follow the example below.**
 ```sh
-npm run tags TAGS='@resultado_segunda_página'
+npm run tags TAGS='@ebay_user_register'
 ```
 
 - To run by TAG and generate a report.
 ```sh
-npm run tags TAGS='@olx'; npm run report
+npm run tags TAGS='@ebay'; npm run report
 ```
 
 
