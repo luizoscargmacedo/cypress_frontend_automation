@@ -46,7 +46,7 @@ or
 ```sh
 npx cypress run
 ```
-or pelo script 
+or by script 
 ```sh
 npm run cy:run
 ```
